@@ -17,8 +17,7 @@
         .checklist-item { display: flex; align-items: center; padding: 0.6rem 0; border-bottom: 0.5px solid #f0f0f0; }
         input[type="checkbox"] { width: 1.3rem; height: 1.3rem; margin-right: 0.8rem; accent-color: var(--yose-green); }
         .tag { font-size: 0.6rem; padding: 0.1rem 0.4rem; border-radius: 0.3rem; font-weight: 700; margin-left: 0.5rem; }
-        .tag-no-dog { background: #fee2e2; color: #ef4444; }
-        .tag-dog { background: #dcfce7; color: #16a34a; }
+        .tag-breakfast { background: #fef3c7; color: #92400e; }
     </style>
 </head>
 <body class="pb-10">
@@ -33,16 +32,35 @@
     <main class="px-4">
         
         <section class="mb-10">
-            <div class="date-label">06/18 週四 • 抵達</div>
+            <div class="date-label">06/18 週四 • 抵達與整備</div>
             <div class="card bg-zinc-900 text-white border-0 shadow-xl">
                 <p class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest mb-1">Accommodation</p>
-                <h4 class="font-bold text-xl mb-2">Quality Inn Fresno Airport</h4>
+                <div class="flex items-center mb-1">
+                    <h4 class="font-bold text-xl">Quality Inn Fresno Airport</h4>
+                    <span class="tag tag-breakfast">附早餐</span>
+                </div>
+                <p class="text-[11px] text-zinc-400 mb-4">預訂內容：共 3 間房</p>
+                
+                <div class="bg-white/10 p-4 rounded-xl mb-4 space-y-3">
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-car text-green-400 mt-1 mr-3"></i>
+                        <div>
+                            <p class="text-xs font-bold">FAT 機場租車取車</p>
+                            <p class="text-[10px] text-zinc-400">務必檢查車況、胎壓與備胎，確認兒童座椅安裝。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start border-t border-white/10 pt-3">
+                        <i class="fa-solid fa-plane-arrival text-blue-400 mt-1 mr-3"></i>
+                        <p class="text-[10px] text-zinc-400 leading-relaxed">航班：AS3390 (17:58) / WN948 (21:45)</p>
+                    </div>
+                </div>
+
                 <div class="flex justify-between items-center mb-4">
                     <p class="text-lg font-mono font-black text-green-400">$269.61</p>
                     <p class="text-[10px] text-red-400 font-bold">6/17 前可免費取消</p>
                 </div>
-                <a href="https://maps.google.com/?cid=7023175275491336306&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-hotel">
-                    <i class="fa-solid fa-map-location-dot mr-2"></i> 導航至 Quality Inn 飯店
+                <a href="https://www.google.com/maps/search/?api=1&query=Quality+Inn+Fresno+Yosemite+Airport" target="_blank" class="btn-hotel">
+                    <i class="fa-solid fa-map-location-dot mr-2"></i> 導航至飯店
                 </a>
             </div>
         </section>
@@ -53,7 +71,7 @@
                 <div class="mb-6">
                     <div class="flex justify-between items-center mb-2">
                         <h3 class="font-black text-lg text-zinc-800">10:30 Tunnel View</h3>
-                        <a href="https://maps.google.com/?cid=8328844533852289500&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-nav px-4">導航</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Tunnel+View+Yosemite" target="_blank" class="btn-nav px-4">導航</a>
                     </div>
                     <p class="text-xs text-zinc-500">拍攝全家福與下瀑布步道。</p>
                 </div>
@@ -61,7 +79,7 @@
                 <div class="pt-5 border-t border-zinc-100 mb-6">
                     <div class="flex justify-between items-center mb-2">
                         <h3 class="font-bold text-zinc-800 text-sm">13:00 Base Camp Eatery</h3>
-                        <a href="https://maps.google.com/?cid=5335808849349390904&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-nav px-4">導航</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Base+Camp+Eatery+Yosemite" target="_blank" class="btn-nav px-4">導航</a>
                     </div>
                     <p class="text-[11px] text-zinc-500">享用手工披薩。</p>
                 </div>
@@ -69,22 +87,24 @@
                 <div class="pt-5 border-t border-zinc-100 mb-6">
                     <div class="flex justify-between items-center mb-2">
                         <h3 class="font-bold text-zinc-800 text-sm">14:00 Oakhurst 採買 (Vons)</h3>
-                        <a href="https://maps.google.com/?cid=6561336660800952772&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-nav px-4">導航</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Vons+Oakhurst" target="_blank" class="btn-nav px-4">導航</a>
                     </div>
+                    <p class="text-[11px] text-zinc-500">進入山區前最後的大型補給站。</p>
                 </div>
 
                 <div class="pt-5 border-t border-zinc-100">
                     <div class="flex items-center text-sm font-bold text-zinc-800">
-                        <i class="fa-solid fa-key mr-2 text-zinc-400"></i> 15:30 Airbnb 入住
+                        <i class="fa-solid fa-key mr-2 text-zinc-400"></i> 15:30 Airbnb 入住休息
                     </div>
                 </div>
             </div>
 
             <div class="card bg-blue-50 border-blue-100">
-                <h4 class="font-black text-blue-900 mb-3 italic text-sm"><i class="fa-solid fa-list-check mr-2"></i>採買清單</h4>
+                <h4 class="font-black text-blue-900 mb-3 italic text-sm"><i class="fa-solid fa-list-check mr-2"></i>大採買清單</h4>
                 <div class="space-y-1">
                     <div class="checklist-item text-blue-900"><input type="checkbox"><span class="text-sm font-semibold">3-5 加侖大桶飲用水</span></div>
                     <div class="checklist-item text-blue-900"><input type="checkbox"><span class="text-sm font-semibold">牛排/雞胸肉/鮮奶/雞蛋</span></div>
+                    <div class="checklist-item text-blue-900"><input type="checkbox"><span class="text-sm font-semibold">嫩嬰與狗狗必備物資</span></div>
                 </div>
             </div>
         </section>
@@ -95,7 +115,7 @@
                 <div class="mb-6">
                     <div class="flex justify-between items-center mb-2">
                         <h3 class="font-black text-lg text-zinc-800">Glacier Point</h3>
-                        <a href="https://maps.google.com/?cid=6401832519891036170&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-nav px-4">導航</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Glacier+Point+Yosemite" target="_blank" class="btn-nav px-4">導航</a>
                     </div>
                     <p class="text-xs text-zinc-500">俯瞰 Half Dome 全景。</p>
                 </div>
@@ -103,35 +123,28 @@
                 <div class="pt-5 border-t border-zinc-100">
                     <div class="flex justify-between items-center mb-2">
                         <h3 class="font-bold text-zinc-800 text-sm">下午：Wawona Hotel</h3>
-                        <a href="https://maps.google.com/?cid=17536183140030521569&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-nav px-4">導航</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Wawona+Hotel" target="_blank" class="btn-nav px-4">導航</a>
                     </div>
-                    <p class="text-[11px] text-zinc-500">探索復古百年旅館。</p>
+                    <p class="text-[11px] text-zinc-500">感受百年老牌山莊氛圍。</p>
                 </div>
             </div>
 
             <div class="card bg-zinc-50 border-zinc-200 border-2 border-dashed">
-                <h4 class="font-black text-zinc-400 mb-4 tracking-widest text-[10px] uppercase text-center">備用景點導航</h4>
+                <h4 class="font-black text-zinc-400 mb-4 tracking-widest text-[10px] uppercase text-center text-zinc-400">備用景點導航</h4>
                 <div class="space-y-6">
                     <div class="flex justify-between items-start">
                         <div>
-                            <div class="flex items-center mb-1"><span class="font-bold text-xs">Mariposa Grove</span><span class="tag tag-no-dog">狗狗禁入</span></div>
-                            <p class="text-[10px] text-zinc-500 leading-tight">千年巨木群步道。</p>
+                            <div class="flex items-center mb-1"><span class="font-bold text-xs text-zinc-700">Mariposa Grove</span><span class="tag bg-red-100 text-red-600">狗狗禁入</span></div>
+                            <p class="text-[10px] text-zinc-500 leading-tight">千年巨木群（推車友善）。</p>
                         </div>
-                        <a href="https://maps.google.com/?cid=8256313634716258581&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-nav px-3 py-1 text-xs">導航</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Mariposa+Grove" target="_blank" class="btn-nav px-3 py-1 text-xs">導航</a>
                     </div>
                     <div class="flex justify-between items-start">
                         <div>
-                            <div class="flex items-center mb-1"><span class="font-bold text-xs">Wawona Meadow Loop</span><span class="tag tag-dog">狗狗友善</span></div>
-                            <p class="text-[10px] text-zinc-500 leading-tight">狗狗最愛森林散步。</p>
+                            <div class="flex items-center mb-1"><span class="font-bold text-xs text-zinc-700">Wawona Meadow Loop</span><span class="tag bg-green-100 text-green-600">狗狗友善</span></div>
+                            <p class="text-[10px] text-zinc-500 leading-tight">平緩森林步道散步。</p>
                         </div>
-                        <a href="https://maps.google.com/?cid=13215471079028129927&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-nav px-3 py-1 text-xs">導航</a>
-                    </div>
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <div class="font-bold text-xs mb-1">Washburn Point</div>
-                            <p class="text-[10px] text-zinc-500 leading-tight">懶人專用攝影大景。</p>
-                        </div>
-                        <a href="https://maps.google.com/?cid=8611120243475524008&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-nav px-3 py-1 text-xs">導航</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Wawona+Meadow+Loop" target="_blank" class="btn-nav px-3 py-1 text-xs">導航</a>
                     </div>
                 </div>
             </div>
@@ -143,12 +156,12 @@
                 <div class="bg-amber-50 p-4 rounded-xl border border-amber-100 mb-4">
                     <div class="flex justify-between items-center">
                         <p class="text-[11px] font-bold text-amber-900">選項 A：Mariposa 小鎮咖啡</p>
-                        <a href="https://maps.google.com/?cid=1422574038258595261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-nav bg-amber-600 px-3 py-1 text-xs">導航</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Mariposa+Coffee+Company" target="_blank" class="btn-nav bg-amber-600 px-3 py-1 text-xs">導航</a>
                     </div>
                 </div>
                 <div class="flex justify-center gap-10 mb-6 pt-4">
-                    <div><p class="text-[9px] font-bold text-zinc-400">還車</p><p class="text-lg font-black text-zinc-800">14:30</p></div>
-                    <div><p class="text-[9px] font-bold text-zinc-400">航班</p><p class="text-lg font-black text-blue-600">17:00+</p></div>
+                    <div><p class="text-[9px] font-bold text-zinc-400 uppercase">Return Car</p><p class="text-lg font-black text-zinc-800">14:30</p></div>
+                    <div><p class="text-[9px] font-bold text-zinc-400 uppercase">Flight</p><p class="text-lg font-black text-blue-600">17:00+</p></div>
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=Fresno+Yosemite+International+Airport+Car+Rental" target="_blank" class="btn-nav bg-zinc-800 w-full py-3">
                     <i class="fa-solid fa-car-side mr-2"></i> 導航至機場還車
@@ -157,5 +170,8 @@
         </section>
 
     </main>
+
+    <p class="text-center text-zinc-400 text-[9px] font-medium tracking-widest pb-10 italic uppercase">Yosemite 2026 • 祝旅途愉快</p>
+
 </body>
 </html>
