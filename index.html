@@ -11,10 +11,12 @@
         body { font-family: -apple-system, system-ui, sans-serif; background-color: #F2F2F7; }
         .app-header { background: linear-gradient(rgba(0,0,0,0.3), rgba(30,70,42,0.8)), url('https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center; height: 160px; border-radius: 0 0 2rem 2rem; }
         .card { background: white; border-radius: 1.25rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 1.25rem; padding: 1.25rem; border: 0.5px solid rgba(0,0,0,0.05); }
-        .btn-nav { background-color: var(--yose-green); color: white !important; display: flex; align-items: center; justify-content: center; padding: 0.6rem; border-radius: 0.8rem; font-weight: 700; text-decoration: none; font-size: 0.85rem; }
+        .btn-nav { background-color: var(--yose-green); color: white !important; display: flex; align-items: center; justify-content: center; padding: 0.6rem; border-radius: 0.8rem; font-weight: 700; text-decoration: none; font-size: 0.85rem; margin-top: 0.5rem; }
         .btn-hotel { background-color: #1a1a1a; color: white !important; display: flex; align-items: center; justify-content: center; padding: 0.8rem; border-radius: 0.8rem; font-weight: 700; text-decoration: none; margin-top: 0.8rem; }
         .date-label { background: var(--yose-green); color: white; font-size: 0.75rem; padding: 0.2rem 0.8rem; border-radius: 2rem; font-weight: 800; margin-bottom: 1rem; display: inline-block; }
         .tag { font-size: 0.6rem; padding: 0.1rem 0.4rem; border-radius: 0.3rem; font-weight: 700; margin-left: 0.5rem; }
+        .spot-desc { font-size: 0.7rem; color: #666; line-height: 1.4; margin-top: 0.4rem; background: #f9f9f9; padding: 0.5rem; border-left: 3px solid var(--yose-earth); border-radius: 0 0.5rem 0.5rem 0; }
+        .flight-row { display: flex; justify-content: space-between; font-size: 0.75rem; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .info-badge { background: #f0f0f7; color: #444; font-size: 0.7rem; padding: 0.3rem 0.6rem; border-radius: 0.5rem; display: inline-flex; align-items: center; margin-right: 0.5rem; margin-top: 0.4rem; }
     </style>
 </head>
@@ -32,65 +34,115 @@
         <section class="mb-10">
             <div class="date-label">06/18 週四 • 抵達</div>
             <div class="card bg-zinc-900 text-white border-0 shadow-xl">
+                <p class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest mb-2">Arrival Flights</p>
+                <div class="bg-white/10 p-3 rounded-lg mb-4">
+                    <div class="flight-row"><span class="font-bold text-blue-400">Alaska AS3390</span><span>17:58 - 19:21</span></div>
+                    <div class="flight-row border-0"><span class="font-bold text-orange-400">Southwest WN948</span><span>21:45 - 23:05</span></div>
+                </div>
                 <div class="flex items-center mb-1">
                     <h4 class="font-bold text-lg">Quality Inn Fresno Airport</h4>
                     <span class="tag bg-amber-200 text-amber-900">附早餐</span>
                 </div>
-                <p class="text-[11px] text-zinc-400 mb-4 italic text-xs">第一晚住宿 • 3 間房</p>
-                <a href="https://www.google.com/maps/search/?api=1&query=Quality+Inn+Fresno+Airport" target="_blank" class="btn-hotel">
+                <p class="text-[10px] text-zinc-400 mb-4 italic">住宿：3 間房 | 機場取車後入住</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Quality+Inn+Fresno+Yosemite+Airport" target="_blank" class="btn-hotel">
                     <i class="fa-solid fa-map-location-dot mr-2"></i> 導航至飯店
                 </a>
             </div>
         </section>
 
         <section class="mb-10">
-            <div class="date-label">06/19 週五 • 入住 Airbnb</div>
+            <div class="date-label">06/19 週五 • 山谷深度遊與入住</div>
             <div class="card">
-                <p class="text-[10px] text-zinc-400 font-bold uppercase tracking-widest mb-1">Accommodation</p>
-                <h3 class="font-black text-xl text-zinc-800 mb-1">Airbnb Oakhurst</h3>
-                <p class="text-xs text-zinc-500 mb-3">50696 Granite Butte Way, Oakhurst, CA 93644</p>
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-black text-lg text-zinc-800">10:30 Tunnel View</h3>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Tunnel+View+Yosemite" target="_blank" class="btn-nav px-4">導航</a>
+                    </div>
+                    <div class="spot-desc">經典必拍全景。下午陽光照亮半圓丘最美。</div>
+                </div>
                 
-                <div class="flex flex-wrap mb-4">
-                    <span class="info-badge font-bold"><i class="fa-solid fa-key mr-1 text-yose-earth"></i> 2437 月亮</span>
-                    <span class="info-badge"><i class="fa-solid fa-clock mr-1"></i> 16:00 入住</span>
+                <div class="pt-5 border-t border-zinc-100 mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-zinc-800 text-sm">13:00 Base Camp Eatery</h3>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Base+Camp+Eatery+Yosemite" target="_blank" class="btn-nav px-4">導航</a>
+                    </div>
+                    <p class="text-[11px] text-zinc-500">午餐推薦手工披薩，狗狗可待在戶外區。</p>
                 </div>
 
-                <div class="bg-zinc-50 p-4 rounded-xl border border-zinc-100 mb-4">
-                    <p class="text-[11px] text-zinc-400 uppercase font-bold mb-2">Check-in Process</p>
-                    <p class="text-xs leading-relaxed text-zinc-600">
-                        14:00 Oakhurst 採買後，於 16:00 前往地址。使用密碼 <b>2437</b> 搭配月亮圖示解鎖。
-                    </p>
+                <div class="pt-5 border-t border-zinc-100 mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-zinc-800 text-sm">14:00 Oakhurst 採買 (Vons)</h3>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Vons+Oakhurst+CA" target="_blank" class="btn-nav px-4">導航</a>
+                    </div>
+                    <p class="text-[11px] text-zinc-500">進屋前最後大型補給（水、牛排、早餐）。</p>
                 </div>
 
-                <a href="https://www.google.com/maps/search/?api=1&query=50696+Granite+Butte+Way+Oakhurst+CA+93644" target="_blank" class="btn-nav w-full py-3">
-                    <i class="fa-solid fa-house-chimney mr-2"></i> 導航至 Airbnb
-                </a>
+                <div class="pt-5 border-t border-zinc-100">
+                    <p class="text-[10px] text-zinc-400 font-bold uppercase tracking-widest mb-2">Airbnb Check-in (16:00)</p>
+                    <h3 class="font-black text-lg text-zinc-800 mb-1">Granite Butte Way</h3>
+                    <div class="flex flex-wrap mb-3">
+                        <span class="info-badge font-bold"><i class="fa-solid fa-key mr-1"></i> 2437 月亮</span>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=50696+Granite+Butte+Way+Oakhurst+CA" target="_blank" class="btn-nav bg-zinc-800">
+                        <i class="fa-solid fa-house-chimney mr-2"></i> 導航至 Airbnb
+                    </a>
+                </div>
             </div>
         </section>
 
         <section class="mb-10">
-            <div class="date-label">06/21 週日 • 退房返程</div>
-            <div class="card border-2 border-dashed border-zinc-200">
-                <div class="flex justify-between items-center mb-4">
-                    <h3 class="font-bold text-zinc-800 text-sm italic"><i class="fa-solid fa-person-walking-arrow-right mr-2"></i>Airbnb 退房</h3>
-                    <span class="text-xs font-black text-red-600">10:00 AM 前</span>
+            <div class="date-label">06/20 週六 • 巔峰與古蹟</div>
+            <div class="card">
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-black text-lg text-zinc-800">Glacier Point</h3>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Glacier+Point+Yosemite" target="_blank" class="btn-nav px-4">導航</a>
+                    </div>
+                    <div class="spot-desc">海拔 2199m。注意溫差，幫嫩嬰狗狗準備防風外套。</div>
                 </div>
-                <p class="text-[11px] text-zinc-500 leading-tight">
-                    請確認垃圾清理與門窗鎖閉。接著開始返程並於 14:30 前完成還車。
-                </p>
-            </div>
+                
+                <div class="pt-5 border-t border-zinc-100 mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-zinc-800 text-sm">下午：Wawona Hotel</h3>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Wawona+Hotel+Yosemite" target="_blank" class="btn-nav px-4">導航</a>
+                    </div>
+                    <div class="spot-desc">1876 年維多利亞風格建築。在大陽台搖椅休息超 Chill。</div>
+                </div>
 
-            <div class="card bg-zinc-900 text-white border-0 shadow-lg mt-4">
-                <div class="space-y-3">
-                    <div class="flex justify-between items-center p-2 rounded-lg bg-white/5">
-                        <span class="text-xs font-bold text-blue-400">Alaska AS3390</span>
-                        <span class="text-xs font-mono">16:22 - 17:47</span>
-                    </div>
-                    <div class="flex justify-between items-center p-2 rounded-lg bg-white/5">
-                        <span class="text-xs font-bold text-orange-400">Southwest WN948</span>
-                        <span class="text-xs font-mono">17:50 - 19:05</span>
+                <div class="pt-5 border-t border-zinc-100">
+                    <h4 class="text-xs font-bold text-zinc-400 mb-3 uppercase">備用：狗狗友善散步</h4>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-bold text-zinc-700">Wawona Meadow Loop</span>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Wawona+Meadow+Loop+Trailhead" target="_blank" class="btn-nav bg-zinc-100 !text-zinc-600 px-3 py-1 text-[10px] mt-0">導航</a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <div class="date-label">06/21 週日 • 返程</div>
+            <div class="card bg-zinc-50 border-0">
+                <div class="flex justify-between items-center mb-4">
+                    <span class="text-xs font-bold bg-red-100 text-red-600 px-2 py-1 rounded">10:00 退房</span>
+                    <span class="text-xs font-bold bg-zinc-200 text-zinc-700 px-2 py-1 rounded">14:30 還車</span>
+                </div>
+                
+                <div class="bg-white p-4 rounded-xl shadow-sm mb-4">
+                    <p class="text-[10px] font-black text-zinc-400 uppercase mb-3">Return Flights</p>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-xs font-bold text-zinc-800"><span>Alaska AS3390</span><span>16:22 - 17:47</span></div>
+                        <div class="flex justify-between text-xs font-bold text-zinc-800"><span>Southwest WN948</span><span>17:50 - 19:05</span></div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 mb-4">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Mariposa+Coffee+Company" target="_blank" class="btn-nav !bg-amber-600 text-[10px]">選項A: 小鎮咖啡</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Brunch+Fresno+CA" target="_blank" class="btn-nav !bg-blue-600 text-[10px]">選項B: Fresno 早午餐</a>
+                </div>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Fresno+Yosemite+International+Airport+Car+Rental" target="_blank" class="btn-nav bg-zinc-800 py-3">
+                    <i class="fa-solid fa-car-side mr-2"></i> 導航至機場還車
+                </a>
             </div>
         </section>
 
