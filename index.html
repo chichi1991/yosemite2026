@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
-    
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Yosemite2026">
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2501/2501484.png">
-
     <title>Yosemite 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <style>
         :root { --yose-green: #1E462A; --yose-earth: #A67C52; }
         body { font-family: -apple-system, system-ui, sans-serif; background-color: #F2F2F7; padding-bottom: env(safe-area-inset-bottom); }
@@ -23,7 +20,6 @@
         .badge-family { background: #dcfce7; color: #166534; font-size: 0.6rem; padding: 0.1rem 0.4rem; border-radius: 0.3rem; font-weight: 800; }
         .badge-pro { background: #fef2f2; color: #991b1b; font-size: 0.6rem; padding: 0.1rem 0.4rem; border-radius: 0.3rem; font-weight: 800; }
         .spot-desc { font-size: 0.7rem; color: #666; line-height: 1.4; margin-top: 0.5rem; background: #f9f9f9; padding: 0.6rem; border-left: 3px solid var(--yose-earth); border-radius: 0 0.5rem 0.5rem 0; }
-        .tag-amber { background: #fef3c7; color: #92400e; font-size: 0.6rem; padding: 0.1rem 0.4rem; border-radius: 0.3rem; font-weight: 800; }
     </style>
 </head>
 <body class="pb-10">
@@ -31,7 +27,7 @@
     <header class="app-header">
         <div class="w-full">
             <h1 class="text-3xl font-black text-white italic tracking-tighter">Yosemite 2026</h1>
-            <p class="text-white/80 text-[10px] font-bold mt-1 tracking-widest uppercase">SW Airlines • 6 Adults • 1 Infant • 1 Dog</p>
+            <p class="text-white/80 text-[10px] font-bold mt-1 tracking-widest uppercase">SW Airlines • Full Itinerary</p>
         </div>
     </header>
 
@@ -39,145 +35,81 @@
         
         <section class="mb-10">
             <div class="date-label">06/18 週四 • 抵達</div>
-            <div class="card bg-zinc-900 text-white border-0 shadow-xl">
-                <div class="flex justify-between items-center mb-4">
-                    <span class="tag-amber bg-orange-500 text-white">Southwest WN948</span>
-                    <span class="text-xs font-mono">21:45 - 23:05</span>
-                </div>
-                <div class="mb-4">
-                    <h4 class="font-bold text-lg">Quality Inn Fresno Airport</h4>
-                    <p class="text-[10px] text-zinc-400">第一晚住宿 • 3 間房 (附早餐)</p>
-                </div>
-                <div class="bg-white/10 p-3 rounded-xl mb-4 text-xs italic">
-                    <i class="fa-solid fa-car-side mr-2 text-green-400"></i> 機場取車後導航飯店
-                </div>
-                <a href="https://www.google.com/maps/search/?api=1&query=Quality+Inn+Fresno+Yosemite+Airport" target="_blank" class="btn-nav !bg-white !text-zinc-900">
-                    <i class="fa-solid fa-location-dot mr-2"></i> 導航至飯店
-                </a>
+            <div class="card bg-zinc-900 text-white border-0">
+                <div class="flex justify-between items-center mb-4"><span class="bg-orange-500 text-white text-[10px] px-2 py-0.5 rounded font-black">WN948</span><span class="text-xs font-mono">21:45 - 23:05</span></div>
+                <h4 class="font-bold text-lg">Quality Inn Fresno Airport</h4>
+                <p class="text-[10px] text-zinc-400 mb-4 italic">機場取車後入住 | 附早餐</p>
+                <a href="https://maps.google.com/?q=Quality+Inn+Fresno+Airport" target="_blank" class="btn-nav !bg-white !text-zinc-900"><i class="fa-solid fa-location-dot mr-2"></i> 導航至飯店</a>
             </div>
         </section>
 
         <section class="mb-10">
-            <div class="date-label">06/19 週五 • 山谷深度遊</div>
-            
+            <div class="date-label">06/19 週五 • 山谷精華</div>
             <div class="card border-l-4 border-green-500">
-                <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <span class="badge-family mb-1 inline-block">👶 🐶 推薦</span>
-                        <h3 class="font-black text-lg text-zinc-800">Tunnel View</h3>
-                    </div>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Tunnel+View+Yosemite" target="_blank" class="btn-nav px-4">導航</a>
-                </div>
-                <div class="spot-desc">無須步行。下午 16:00 後光線最美。拍攝 El Capitan 與 Half Dome 全景。</div>
+                <div class="flex justify-between items-start"><div><span class="badge-family mb-1 inline-block">👶 🐶 推薦</span><h3 class="font-black text-lg">Tunnel View</h3></div><a href="https://maps.google.com/?q=Tunnel+View+Yosemite" target="_blank" class="btn-nav px-4">導航</a></div>
+                <div class="spot-desc">16:00 後光線最美。無須徒步。</div>
             </div>
-
             <div class="card border-l-4 border-green-500">
-                <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <span class="badge-family mb-1 inline-block">👶 🐶 推薦</span>
-                        <h3 class="font-black text-lg text-zinc-800">Bridalveil Fall</h3>
-                    </div>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Bridalveil+Fall" target="_blank" class="btn-nav px-4">導航</a>
-                </div>
-                <div class="spot-desc">步道極短平緩。17:15 - 18:30 瀑布底有彩虹。嫩嬰注意防水霧。</div>
+                <div class="flex justify-between items-start"><div><span class="badge-family mb-1 inline-block">👶 🐶 推薦</span><h3 class="font-black text-lg">Bridalveil Fall</h3></div><a href="https://maps.google.com/?q=Bridalveil+Fall" target="_blank" class="btn-nav px-4">導航</a></div>
+                <div class="spot-desc">17:15 彩虹時間。步道極短平緩。</div>
             </div>
-
-            <div class="card">
-                <div class="flex justify-between items-center mb-3">
-                    <h3 class="font-bold text-zinc-800">下午行程 & 補給</h3>
-                </div>
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center border-t pt-3">
-                        <span class="text-xs font-bold text-zinc-600">Base Camp Eatery (午餐)</span>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Base+Camp+Eatery+Yosemite" target="_blank" class="text-blue-600 text-xs font-bold">導航</a>
-                    </div>
-                    <div class="flex justify-between items-center border-t pt-3">
-                        <span class="text-xs font-bold text-zinc-600">Oakhurst Vons (大採買)</span>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Vons+Oakhurst" target="_blank" class="text-blue-600 text-xs font-bold">導航</a>
-                    </div>
-                </div>
-            </div>
-
             <div class="card bg-zinc-800 text-white">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="font-black text-lg">Airbnb Oakhurst</h3>
-                    <a href="https://www.google.com/maps/search/?api=1&query=50696+Granite+Butte+Way+Oakhurst+CA+93644" target="_blank" class="btn-nav !bg-zinc-100 !text-zinc-900 px-4">導航</a>
-                </div>
-                <p class="text-[10px] text-zinc-400 mb-3 uppercase tracking-widest">入住 16:00 | 50696 Granite Butte Way</p>
-                <div class="py-2 px-3 bg-white/10 rounded-lg flex justify-between items-center border border-white/5">
-                    <span class="text-xs font-bold"><i class="fa-solid fa-key mr-2 text-amber-400"></i>門鎖密碼</span>
-                    <span class="text-sm font-black text-amber-400">2437 月亮</span>
-                </div>
+                <div class="flex justify-between items-start"><div><p class="text-[10px] text-zinc-400 font-bold">入住 16:00</p><h3 class="font-black text-lg text-amber-400">Airbnb Oakhurst</h3></div><a href="https://maps.google.com/?q=50696+Granite+Butte+Way+Oakhurst" target="_blank" class="btn-nav !bg-white !text-zinc-900 px-4">導航</a></div>
+                <div class="mt-3 p-3 bg-white/10 rounded-lg flex justify-between items-center"><span class="text-xs font-bold italic">門鎖密碼</span><span class="text-sm font-black text-amber-400">2437 月亮</span></div>
             </div>
         </section>
 
         <section class="mb-10">
-            <div class="date-label">06/20 週六 • 巔峰視野</div>
-            
+            <div class="date-label">06/20 週六 • 巔峰與健行</div>
             <div class="card border-l-4 border-green-500">
-                <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <span class="badge-family mb-1 inline-block">👶 🐶 推薦</span>
-                        <h3 class="font-black text-lg text-zinc-800">Glacier Point</h3>
-                    </div>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Glacier+Point" target="_blank" class="btn-nav px-4">導航</a>
-                </div>
-                <div class="spot-desc">必去景點。清晨光線最佳。山頂溫差極大，請幫嫩嬰穿外套。</div>
+                <div class="flex justify-between items-start"><div><span class="badge-family mb-1 inline-block">👶 🐶 推薦</span><h3 class="font-black text-lg text-sm">Glacier Point</h3></div><a href="https://maps.google.com/?q=Glacier+Point" target="_blank" class="btn-nav px-4">導航</a></div>
+                <div class="spot-desc">必去俯瞰點。注意溫差。</div>
             </div>
-
-            <div class="card border-l-4 border-green-500">
-                <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <span class="badge-family mb-1 inline-block">👶 🐶 推薦</span>
-                        <h3 class="font-black text-lg text-zinc-800">Cook's Meadow</h3>
-                    </div>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Cooks+Meadow+Loop" target="_blank" class="btn-nav px-4">導航</a>
-                </div>
-                <div class="spot-desc">平坦木棧道。可同時拍到優勝美地瀑布與 Half Dome。推車 OK！</div>
-            </div>
-
-            <div class="card border-l-4 border-red-500 bg-red-50/30">
-                <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <span class="badge-pro mb-1 inline-block">🥾 勇腳組專屬</span>
-                        <h3 class="font-black text-lg text-zinc-800">Mist Trail</h3>
-                    </div>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Mist+Trail+Trailhead" target="_blank" class="btn-nav px-4">導航</a>
-                </div>
-                <div class="spot-desc"><b>不建議狗與嬰兒。</b>石階陡峭濕滑。可看 Vernal 與 Nevada 瀑布。</div>
-            </div>
-            
             <div class="card">
-                <div class="flex justify-between items-center">
-                    <h3 class="font-bold text-zinc-800 text-sm">Wawona Hotel 下午茶</h3>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Wawona+Hotel" target="_blank" class="text-blue-600 text-xs font-bold">導航</a>
-                </div>
+                <div class="flex justify-between items-center"><div><h3 class="font-bold text-zinc-800 text-sm">Wawona Hotel 下午茶</h3></div><a href="https://maps.google.com/?q=Wawona+Hotel" target="_blank" class="text-blue-600 text-xs font-bold text-right">導航 ></a></div>
+            </div>
+            <div class="card border-l-4 border-red-500 bg-red-50/30">
+                <div class="flex justify-between items-start"><div><span class="badge-pro mb-1 inline-block">🥾 勇腳組</span><h3 class="font-black text-lg text-sm">Mist Trail</h3></div><a href="https://maps.google.com/?q=Mist+Trail" target="_blank" class="btn-nav px-4">導航</a></div>
+                <div class="spot-desc">石階濕滑。不建議帶狗與嬰兒。</div>
             </div>
         </section>
 
         <section class="mb-10">
-            <div class="date-label">06/21 週日 • 退房返程</div>
-            <div class="card bg-zinc-50 border-dashed border-2 border-zinc-200">
+            <div class="date-label">06/21 週日 • 小鎮與返程</div>
+            
+            <div class="card border-l-4 border-amber-400">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <span class="badge-family mb-1 inline-block">🛍️ 悠閒行程</span>
+                        <h3 class="font-black text-lg text-sm">Oakhurst 小鎮逛街</h3>
+                    </div>
+                </div>
+                <div class="spot-desc">
+                    <b>行程：</b>10:00 退房後前往。逛特色藝廊、紀念品店或咖啡廳。
+                    <br><b>推薦：</b>可以在此吃午餐再前往機場。
+                </div>
+            </div>
+
+            <div class="card border-2 border-zinc-200">
                 <div class="flex justify-between items-center mb-4">
-                    <span class="text-xs font-black text-red-600 underline">10:00 AM 前退房</span>
-                    <span class="tag-amber bg-orange-500 text-white">WN948</span>
+                    <span class="text-xs font-black text-red-600 underline text-[10px]">10:00 AM 前退房</span>
+                    <span class="bg-orange-500 text-white text-[10px] px-2 py-0.5 rounded font-black uppercase">WN948</span>
                 </div>
-                <div class="text-center py-6">
-                    <p class="text-[10px] text-zinc-400 font-black mb-1">DEPARTURE</p>
-                    <p class="text-3xl font-black text-zinc-900">17:50 - 19:05</p>
+                <div class="text-center py-4 bg-zinc-50 rounded-xl mb-4">
+                    <p class="text-[10px] text-zinc-400 font-black">RETURN FLIGHT</p>
+                    <p class="text-2xl font-black">17:50 - 19:05</p>
                 </div>
-                <div class="bg-amber-100 p-3 rounded-lg text-[11px] text-amber-900 font-bold mb-4 text-center">
-                    ⚠️ 請於 14:30 前完成還車手續
-                </div>
-                <a href="https://www.google.com/maps/search/?api=1&query=Fresno+Yosemite+International+Airport+Car+Rental" target="_blank" class="btn-nav bg-zinc-800 py-3">
-                    <i class="fa-solid fa-car-side mr-2"></i> 導航至機場還車
-                </a>
+                <a href="https://maps.google.com/?q=Fresno+Airport+Car+Rental" target="_blank" class="btn-nav bg-zinc-800 py-3"><i class="fa-solid fa-car-side mr-2"></i> 導航至機場還車 (14:30)</a>
             </div>
         </section>
+
+        <div class="date-label !bg-sky-700">📋 彈性備案點</div>
+        <div class="grid grid-cols-2 gap-2 mb-6">
+            <div class="card p-3 mb-0 text-center"><h4 class="text-[10px] font-bold">鏡湖 Mirror Lake</h4><a href="https://maps.google.com/?q=Mirror+Lake" class="text-[10px] text-blue-600 underline">導航</a></div>
+            <div class="card p-3 mb-0 text-center"><h4 class="text-[10px] font-bold">下瀑布步道</h4><a href="https://maps.google.com/?q=Lower+Yosemite+Fall" class="text-[10px] text-blue-600 underline">導航</a></div>
+        </div>
 
     </main>
-
-    <p class="text-center text-zinc-400 text-[9px] font-medium tracking-widest pb-10 italic uppercase">Yosemite 2026 • Travel App</p>
-
+    <p class="text-center text-zinc-400 text-[9px] font-medium tracking-widest pb-10 italic uppercase">Yosemite 2026 • 最終完全體</p>
 </body>
 </html>
